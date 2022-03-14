@@ -19,7 +19,7 @@
     	<?php 
     		if (isset($_GET['msg'])) {
     			
-    			echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">';
+    			echo '<div id="mydiv" class="alert alert-warning alert-dismissible fade show" role="alert">';
 					echo $_GET['msg'];
 					echo '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>';
 					echo '</div>';
@@ -141,12 +141,22 @@
     	</form>
     </div>
 
+
+
     <footer class="bg-dark text-light text-center py-4">
     	<p class="mt-2">Copyright &copy; | Create By: Tarek</p>
     </footer>
 
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+    <script>
+    $(function() {
+        $("#mydiv").fadeOut(4000);
+    });              
+</script>
     </body>
 </html>

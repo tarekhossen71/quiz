@@ -20,7 +20,7 @@
     		<div class="card-header">Result</div>
     		<div class="card-body">
     			<?php 
-              if ($_POST['question-1-answers'] != '' && $_POST['question-2-answers'] != '' && $_POST['question-3-answers'] !='') {
+              if ($_POST['question-1-answers'] != '' && $_POST['question-2-answers'] != '' && $_POST['question-3-answers'] !='' && $_POST['question-4-answers'] !='' && $_POST['question-5-answers'] !='') {
                 $answer1 = $_POST['question-1-answers'];
                 $answer2 = $_POST['question-2-answers'];
                 $answer3 = $_POST['question-3-answers'];
